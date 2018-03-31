@@ -19,9 +19,9 @@ my_list[-1]["g_key"] = "g_atr"
 with open("my_first.yaml", "w") as f:
 	yaml.dump(my_list, f, default_flow_style=False)
 
-with open("my_second.json", "w") as f:
+with open("my_first.json", "w") as f:
 	json.dump(my_list, f)
 
-print("Files my_first.yaml and my_second.json were create.")
+print("Files my_first.yaml and my_first.json were create.")
 
 
