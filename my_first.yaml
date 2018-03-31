@@ -1,0 +1,11 @@
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- !!python/unicode 'something'
+- !!python/unicode '$55'
+- !!python/unicode 'g_key': !!python/unicode 'g_atr'
+  !!python/unicode 'key1': !!python/unicode 'atr1'
+  !!python/unicode 'key2': !!python/unicode 'atr2'

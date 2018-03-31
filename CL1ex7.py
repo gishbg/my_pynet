@@ -7,25 +7,25 @@
 from __future__ import print_function, unicode_literals
 import yaml
 import json
-from pprint import pp
+from pprint import pprint
 
-with open("my_first.yaml") as f:
-	yaml_file = yaml.load(f)
+with open("my_first.yaml") as f1:
+	yaml_file = yaml.load(f1)
 
-with open("my_first.json") as f:
-	json_file = jason.load(f)
+with open("my_first.json") as f2:
+	json_file = json.load(f2)
 
-pp("="*30)
-pp("YAML FILE")
-pp("="*30)
-pp(yaml_file)
-pp("="*30)
-pp()
-pp()
+pprint("="*30)
+pprint("YAML FILE")
+pprint("="*30)
+pprint(yaml_file)
+pprint("="*30)
+pprint("")
+pprint("")
 
-pp("="*30)
-pp("JASON FILE")
-pp("="*30)
-pp(json_file)
-pp("="*30)
-pp()
+pprint("="*30)
+pprint("JASON FILE")
+pprint("="*30)
+pprint(json_file)
+pprint("="*30)
+pprint("")
