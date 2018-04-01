@@ -9,23 +9,28 @@ import yaml
 import json
 from pprint import pprint
 
-with open("my_first.yaml") as f1:
-	yaml_file = yaml.load(f1)
+def output_format(my_list, file_type):	
+	pprint("")
+	pprint("#"*30)
+	pprint(file_type)
+	pprint("#"*30)
+	pprint(my_list)
+	pprint("#"*30)
+	pprint("")
 
-with open("my_first.json") as f2:
-	json_file = json.load(f2)
 
-pprint("="*30)
-pprint("YAML FILE")
-pprint("="*30)
-pprint(yaml_file)
-pprint("="*30)
-pprint("")
-pprint("")
+def main():
+	"""
+	7. Write a Python program that reads both the YAML file and the JSON file created in exercise6 and pretty prints the data structure that is returned.
+	"""
+	with open("yaml_file.yaml") as f1:
+		yaml_list = yaml.load(f1)
 
-pprint("="*30)
-pprint("JASON FILE")
-pprint("="*30)
-pprint(json_file)
-pprint("="*30)
-pprint("")
+	with open("json_file.json") as f2:
+		json_list = json.load(f2)
+
+	output_format(yaml_list, "YAML FILE")
+	output_format(json_list, "JSON FILE")
+
+if __name__ == "__main__":
+	main()
